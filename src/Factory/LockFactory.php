@@ -78,11 +78,11 @@ class LockFactory
 					break;
 
 				default:
-					return self::useAutoDriver();
+					return $this->useAutoDriver();
 			}
 		} catch (\Exception $exception) {
 			$this->logger->alert('Driver \'' . $lock_type . '\' failed - Fallback to \'useAutoDriver()\'', ['exception' => $exception]);
-			return self::useAutoDriver();
+			return $this->useAutoDriver();
 		}
 	}
 
