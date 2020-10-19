@@ -574,7 +574,7 @@ class Item extends BaseObject
 			'resource-id', 'event-id', 'tag', 'attach', 'post-type', 'file',
 			'private', 'pubmail', 'moderated', 'visible', 'starred', 'bookmark',
 			'unseen', 'deleted', 'origin', 'forum_mode', 'mention', 'global',
-			'id' => 'item_id', 'network', 'icid', 'iaid', 'id' => 'internal-iid',
+			'network', 'icid', 'iaid', 'id' => 'internal-iid',
 			'network' => 'internal-network', 'icid' => 'internal-icid',
 			'iaid' => 'internal-iaid'];
 
