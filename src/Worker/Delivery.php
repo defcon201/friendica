@@ -396,7 +396,7 @@ class Delivery extends BaseObject
 	private static function deliverDiaspora($cmd, $contact, $owner, $items, $target_item, $public_message, $top_level, $followup)
 	{
 		// We don't treat Forum posts as "wall-to-wall" to be able to post them via Diaspora
-		$walltowall = $top_level && ($owner['id'] != $items[0]['contact-id']) & ($owner['account-type'] != Model\User::ACCOUNT_TYPE_COMMUNITY);
+		$walltowall = $top_level && ($owner['id'] != $items[0]['contact-id']) && ($owner['account-type'] != Model\User::ACCOUNT_TYPE_COMMUNITY);
 
 		if ($public_message) {
 			$loc = 'public batch ' . $contact['batch'];
